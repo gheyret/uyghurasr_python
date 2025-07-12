@@ -56,7 +56,7 @@ class UyghurASR():
         self.sess = onnxruntime.InferenceSession(model.SerializeToString())
 
     def load_prepocess(self,audio_name):
-        target_dBFS = -18.0 # -26 bolsa awaz pesraq, -10 bolsa yuqiriraq bolidiken
+        target_dBFS = -18.0
         mono = AudioSegment.from_file(audio_name).split_to_mono()[0] 
         mono = mono.set_frame_rate(self.sample_rate).apply_gain(target_dBFS - mono.dBFS)
         audio = librosa.util.buf_to_float(mono.get_array_of_samples(),n_bytes=mono.frame_width)
