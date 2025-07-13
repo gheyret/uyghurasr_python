@@ -56,17 +56,9 @@ class UyghurASR():
         self.sess = onnxruntime.InferenceSession(model.SerializeToString())
 
     def load_prepocess(self,audio_name):
-        target_dBFS = -18.0
         mono = AudioSegment.from_file(audio_name).split_to_mono()[0] 
-        mono = mono.set_frame_rate(self.sample_rate).apply_gain(target_dBFS - mono.dBFS)
         audio = librosa.util.buf_to_float(mono.get_array_of_samples(),n_bytes=mono.frame_width)
-
-        audio = (audio-audio.mean())/audio.std()
-
-        spec = librosa.feature.melspectrogram(y=audio, sr=self.sample_rate, n_fft=self.fft_len, hop_length=200,win_length=self.fft_len, n_mels=128, fmax=8000,center=True, pad_mode="reflect",  power=2.0, norm='slaney', htk=True, window="hann") 
-        
-        input = np.expand_dims(np.expand_dims(librosa.power_to_db(spec),axis=0),axis=0)
-        return input    
+        return audio    
 
     def recognize(self,audio_name):    
         input = self.load_prepocess(audio_name)
