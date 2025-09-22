@@ -1,10 +1,11 @@
 ## Ishlitish usuli:
 
-Towendiki esli kodni chushurup yayghandin keyin towendiki ulinishtiki onnx modelni chushurup, oxshash yerge saqlaymiz. andin buyruq qurida:
+Töwendiki esli kodni chüshürüp yayghandin kéyin Töwendiki ulinishtiki onnx modélni chüshürüp, oxshash yerge saqlaymiz. andin buyruq qurida:
 
 python uyghurasr.py
 
-ni ijra qilsaqla bolidu(test5.wav degen awazni tonup, tekistini chiqirip beridu).
+ni ijra qilsaqla bolidu(test5.wav dégen awazni tonup, tékistini chiqirip béridu).
+
 
 download onnx model file from here:
 
