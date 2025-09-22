@@ -1,6 +1,6 @@
 ## Ishlitish usuli:
 
-Töwendiki esli kodni chüshürüp yayghandin kéyin Töwendiki ulinishtiki onnx modélni chüshürüp, oxshash yerge saqlaymiz. 
+Esli kodni chüshürüp yayghandin kéyin Töwendiki ulinishtiki onnx modélni chüshürüp, oxshash yerge saqlaymiz. 
 
 https://github.com/gheyret/uyghurasr_python/releases/tag/tunji](https://github.com/gheyret/uyghurasr_python/releases/download/tunji/uyghur_asr.onnx
 
