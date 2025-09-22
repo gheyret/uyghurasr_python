@@ -4,7 +4,7 @@ Towendiki esli kodni chushurup yayghandin keyin towendiki ulinishtiki onnx model
 
 python uyghurasr.py
 
-ni ijra qilsaqla bolidu()
+ni ijra qilsaqla bolidu(test5.wav degen awazni tonup, tekistini chiqirip beridu).
 
 download onnx model file from here:
 
