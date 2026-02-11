@@ -52,7 +52,7 @@ class UyghurASR():
         self.sample_rate = 22050
         self.fft_len     = 1024
         self.uyghur_latin = Uyghur()
-        model = onnx.load("uyghur_asr.onnx")
+        model = onnx.load("uyghur_asr_yerim3.onnx")
         self.sess = onnxruntime.InferenceSession(model.SerializeToString())
 
     def load_prepocess(self,audio_name):
@@ -78,5 +78,5 @@ class UyghurASR():
 
 if __name__ == '__main__':
     urecognizer = UyghurASR()
-    txt = urecognizer.recognize(R"test5.wav")
+    txt = urecognizer.recognize(R"F:\tonu\awazlar\abliz.mpeg")
     print(txt)
