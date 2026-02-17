@@ -78,6 +78,7 @@ class UyghurASR():
 
 if __name__ == '__main__':
     urecognizer = UyghurASR()
-    txt = urecognizer.recognize(R"test.wav")
+    txt = urecognizer.recognize(R"test5.wav")
     print(txt)
+
 
