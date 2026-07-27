@@ -50,13 +50,13 @@ class Uyghur():
 class UyghurASR():
     def __init__(self):
         self.sample_rate = 22050
-        self.fft_len     = 1024
         self.uyghur_latin = Uyghur()
         model = onnx.load("uyghur_asr.onnx")
         self.sess = onnxruntime.InferenceSession(model.SerializeToString())
 
     def load_prepocess(self,audio_name):
         mono = AudioSegment.from_file(audio_name).split_to_mono()[0] 
+        mono = mono.set_frame_rate(self.sample_rate)
         audio = librosa.util.buf_to_float(mono.get_array_of_samples(),n_bytes=mono.frame_width)
         return audio    
 
