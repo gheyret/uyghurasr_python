@@ -77,8 +77,10 @@ class UyghurASR():
         return "".join(pred)
 
 if __name__ == '__main__':
+    import sys
     urecognizer = UyghurASR()
-    txt = urecognizer.recognize(R"test5.wav")
+    txt = urecognizer.recognize(sys.argv[1])
     print(txt)
+
 
 
