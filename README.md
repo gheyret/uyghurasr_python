@@ -2,17 +2,17 @@
 
 ## Uyghurche
 
-### Qollash usuli:
+### Qollash usuli
 
-Bu proyekt ONNX modelini ishlitip, awazni Uyghurche tekstqa aylitidu. Modelni yükläp, loyiha skriptlari bilen bir öyde saqlang.
+Bu loyiha ONNX modelini ishlitip, awazni Uyghurche tekstqa aylitidu. Modelni yükläp, loyiha skriptlari bilen bir öyge saqlang.
 
-### Talaplar:
+### Talaplar
 
 - Python 3.9+
 - pip
 - Internet (modelni yüklash üchün)
 
-### O'rnatish:
+### O'rnatish
 
 Repozni klon qiling yaki yuklang, andin kerakli paketlarni o'rnating:
 
@@ -20,27 +20,27 @@ Repozni klon qiling yaki yuklang, andin kerakli paketlarni o'rnating:
 pip install numpy librosa pydub onnx onnxruntime
 ```
 
-### Modelni yüklash:
+### Modelni yüklash
 
 Töwendiki model faylini yükläp, loyiha papkisi ichide saqlang:
 
 - [uyghur_asr.onnx](https://github.com/gheyret/uyghurasr_python/releases/download/tunji/uyghur_asr.onnx)
 
-Modelning ismi aniq shu bolup turush kérek:
+Modelning ismi aniq shu bolushi shart:
 
 ```text
 uyghur_asr.onnx
 ```
 
-Bu fayl quyidagilar bilen bir öyde turush kérek:
+Bu fayl quyidagilar bilen bir öyde turushi kerak:
 
 - `uyghurasr.py`
 - `uyghurasrgui.py`
 - `test5.wav`
 
-### Buyruq satiri bilen ishlash:
+### Buyruq satiri bilen ishlash
 
-Loyiha papkisi ichide quyidagicha ishletsingiz bolidu:
+Loyiha papkisi ichide quyidagiche ishlitishingiz mumkin:
 
 ```bash
 python uyghurasr.py test5.wav
@@ -56,10 +56,10 @@ Skript quyidagilarni qilidu:
 
 1. Awaz faylini yüklitidu
 2. Awazni qayta ishlitidu (preprocess)
-3. ONNX model bilen xulosa chiqaridu
+3. ONNX model bilan xulosa chiqaridu
 4. Tanulghan tekstni ekranda chiqaridu
 
-### Misal:
+### Misal
 
 ```bash
 python uyghurasr.py test5.wav
@@ -67,7 +67,7 @@ python uyghurasr.py test5.wav
 
 Bu repo ichide bérilgen namuna awaz fayli bilen ishlitilidu.
 
-### GUI nüsxisi:
+### GUI usuli
 
 Ish stoli üchün GUI ham bérilgen:
 
@@ -82,16 +82,16 @@ Andin:
 3. Tanush tugmasini bosing
 4. Natijeni matn maydani ichide köring
 
-### Eslitishler:
+### Eslitishler
 
 - Model fayli `uyghur_asr.onnx` deb atalsun
 - Skript to'g'ri awaz fayli yolini talap qilidu
-- Awaz formati, asasen, WAV yaki `pydub` oqiy alidighan format bolushi kérek
-- Yaxshi natije üchün toza awazdan, arqa tavush az bolghan sadashtan foydalaning
+- Awaz formati asasen WAV yaki `pydub` oqiy alidighan format bolushi kerak
+- Yaxshi natije üchün toza awazdan, arqa tovush az bolghan sadashtan foydalaning
 
-### Xatoliklarni düzütish:
+### Xatoliklarni tuzatish
 
-Agar import xatosi chiqsa, qaysi paket yoq bolsa o'rnating:
+Agar import xatosi chiqsa, kerakli paketni o'rnating:
 
 ```bash
 pip install <package_name>
@@ -105,25 +105,25 @@ pip install librosa
 pip install onnxruntime
 ```
 
-Agar model topulmas bolsa, uni yükläp, Python fayllari bilen bir öyde saqlang.
+Agar model topulmas bolsa, uni yükläp, Python fayllari bilen bir öyge saqlang.
 
-Agar awaz fayli oqulmas bolsa, faylning barliqini yaki awaz formatining to'g'riligini tekshürüng.
+Agar awaz fayli oqulmas bolsa, faylning mavjudligini va awaz formatining to'g'riligini tekshürüng.
 
 ---
 
 ## English
 
-### Using:
+### Using
 
 This project uses an ONNX model to recognize Uyghur speech and convert it into text. Download the model and keep it in the same folder as the project scripts.
 
-### Requirements:
+### Requirements
 
 - Python 3.9+
 - pip
 - Internet access to download the model
 
-### Installation:
+### Installation
 
 Clone or download the repository, then install the required packages:
 
@@ -131,7 +131,7 @@ Clone or download the repository, then install the required packages:
 pip install numpy librosa pydub onnx onnxruntime
 ```
 
-### Download the model:
+### Download the model
 
 Download the model file below and save it in the same directory as the scripts:
 
@@ -149,7 +149,7 @@ It should be placed alongside:
 - `uyghurasrgui.py`
 - `test5.wav`
 
-### Command-line usage:
+### Command-line usage
 
 From the project folder, run:
 
@@ -170,7 +170,7 @@ The script will:
 3. Run inference with the ONNX model
 4. Print the recognized text
 
-### Example:
+### Example
 
 ```bash
 python uyghurasr.py test5.wav
@@ -178,7 +178,7 @@ python uyghurasr.py test5.wav
 
 This uses the sample audio file included in the repository.
 
-### GUI version:
+### GUI usage
 
 A desktop GUI version is also included:
 
@@ -193,14 +193,14 @@ Then:
 3. Click the recognition button
 4. View the result in the text area
 
-### Notes:
+### Notes
 
 - The model file must be named exactly `uyghur_asr.onnx`
 - The script expects a valid audio file path
 - Input is usually WAV or another format supported by `pydub`
 - Clear speech with minimal background noise gives better results
 
-### Troubleshooting:
+### Troubleshooting
 
 If you encounter an import error, install the missing package:
 
@@ -234,6 +234,6 @@ uyghurasr_python/
 
 ## Litsenziya
 
-Bu loyiha tadqiqot, sinash ve bilim öyrinish maqsidida berilgen.
+Bu loyiha tadqiqot, sinash va bilim öyrinish maqsidida berilgen.
 
 This project is provided as-is for research, experimentation, and educational use.
