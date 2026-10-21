@@ -120,6 +120,7 @@ uyghurasr_python/
 ```
 
 Bu pirojékt tetqiqat, sinaq we ögitish üchün teminlendi
+
 ---
 
 ## English
