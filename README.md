@@ -2,62 +2,62 @@
 
 ## Uyghurche
 
-### Qollash usuli
+### Ishlitish
 
-Bu loyiha ONNX modelini ishlitip, awazni Uyghurche tekstqa aylitidu. Modelni yükläp, loyiha skriptlari bilen bir öyge saqlang.
+Bu pirojékt ONNX modélini ishlitip Uyghurche nutuqni tonup, uni tékistke aylandurup béridu. Modélni chüshürüp, pirojékt höjjetliri bar yerge saqlang.
 
-### Talaplar
+### Telep
 
 - Python 3.9+
 - pip
-- Internet (modelni yüklash üchün)
+- Modélni chüshürüsh üchün Intérnétqa ulinish
 
-### O'rnatish
+### Ornitish
 
-Repozni klon qiling yaki yuklang, andin kerakli paketlarni o'rnating:
+chüshürüp, kéreklik bolaqlarni orniting:
 
 ```bash
 pip install numpy librosa pydub onnx onnxruntime
 ```
 
-### Modelni yüklash
+### Modélni chüshürüsh
 
-Töwendiki model faylini yükläp, loyiha papkisi ichide saqlang:
+Töwendiki modél höjjitini chüshürüp, kod bilen oxshash yerge saqlang:
 
 - [uyghur_asr.onnx](https://github.com/gheyret/uyghurasr_python/releases/download/tunji/uyghur_asr.onnx)
 
-Modelning ismi aniq shu bolushi shart:
+höjjetning nami mundaq bolushi shert:
 
 ```text
 uyghur_asr.onnx
 ```
 
-Bu fayl quyidagilar bilen bir öyde turushi kerak:
+U töwendikiler bilen bir yerge qoyulushi kérek:
 
 - `uyghurasr.py`
 - `uyghurasrgui.py`
 - `test5.wav`
 
-### Buyruq satiri bilen ishlash
+### Buyruq qurida ishlitish
 
-Loyiha papkisi ichide quyidagiche ishlitishingiz mumkin:
+Buyruq qurigha töwendikidek buyruq yézing:
 
 ```bash
 python uyghurasr.py test5.wav
 ```
 
-Agar öz awaz faylingizni ishlitishni xahishingiz bolsa, `test5.wav` ornigha öz faylingizni qoyishingiz mumkin:
+Özingizning awaz höjjitingizni ishlitish üchün `test5.wav` ni öz özingizning awaz höjjiti bilen almashturung:
 
 ```bash
 python uyghurasr.py path/to/your_audio.wav
 ```
 
-Skript quyidagilarni qilidu:
+Kod töwendikidek meshghulatni élip baridu:
 
-1. Awaz faylini yüklitidu
-2. Awazni qayta ishlitidu (preprocess)
-3. ONNX model bilan xulosa chiqaridu
-4. Tanulghan tekstni ekranda chiqaridu
+1. Awaz höjjitini yükleydu
+2. Awaz höjjitini aldin’ala bir terep qilidu
+3. ONNX modéli bilen tonuydu
+4. Tonulghan tékistni chiqiridu
 
 ### Misal
 
@@ -65,11 +65,9 @@ Skript quyidagilarni qilidu:
 python uyghurasr.py test5.wav
 ```
 
-Bu repo ichide bérilgen namuna awaz fayli bilen ishlitilidu.
+### GUI ishlitish
 
-### GUI usuli
-
-Ish stoli üchün GUI ham bérilgen:
+Kompyutér üstel’üsti (desktop) GUI nusxisimu bar:
 
 ```bash
 python uyghurasrgui.py
@@ -77,21 +75,21 @@ python uyghurasrgui.py
 
 Andin:
 
-1. Fayl tanlash tugmasini bosing
-2. Awaz faylini tanlang
-3. Tanush tugmasini bosing
-4. Natijeni matn maydani ichide köring
+1. höjjet tallash topchisi bésing
+2. Bir awaz höjjitini tallang
+3. Tonush topchisi bésing
+4. Netije tékist rayonida körünidu
 
-### Eslitishler
+### Ésinglarda tutung
 
-- Model fayli `uyghur_asr.onnx` deb atalsun
-- Skript to'g'ri awaz fayli yolini talap qilidu
-- Awaz formati asasen WAV yaki `pydub` oqiy alidighan format bolushi kerak
-- Yaxshi natije üchün toza awazdan, arqa tovush az bolghan sadashtan foydalaning
+- Modél höjjitining nami toghra `uyghur_asr.onnx` bolushi shert
+- Kodqa toghra choqum toghra bolghan awaz höjjitini yoli bilen körsitip bérish kérek
+- Awaz höjjitining formati WAV yaki `pydub` qollaydighan bashqa formatlar da bolushi kérek
+- Éniq nutuq we az fon shawqunliri téximu yaxshi netije béridu
 
-### Xatoliklarni tuzatish
+### Mesile hel qilish
 
-Agar import xatosi chiqsa, kerakli paketni o'rnating:
+Eger import xataliqi chiqsa, kem bolaqlarni orniting:
 
 ```bash
 pip install <package_name>
@@ -105,10 +103,23 @@ pip install librosa
 pip install onnxruntime
 ```
 
-Agar model topulmas bolsa, uni yükläp, Python fayllari bilen bir öyge saqlang.
+Eger modél tépilmisa, uni chüshürüp, Python kodi bilen oxshash yerde saqlang.
 
-Agar awaz fayli oqulmas bolsa, faylning mavjudligini va awaz formatining to'g'riligini tekshürüng.
+Eger awaz höjjitini oquyalmisa, höjjet barmu, formati toghrimu tekshürüng.
 
+## Pirojéktning qurulmisi
+
+```text
+uyghurasr_python/
+├── README.md
+├── test5.wav
+├── uyghurasr.py
+├── uyghurasrgui.py
+├── uyghur_asr.onnx   
+└── ...
+```
+
+Bu pirojékt tetqiqat, sinaq we ögitish üchün teminlendi
 ---
 
 ## English
