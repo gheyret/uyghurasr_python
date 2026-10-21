@@ -2,51 +2,51 @@
 
 ## Uyghurche
 
-### Ishlitish usuli:
+### Qollash usuli:
 
-Bu proyekt ONNX modelini ishlitip, awazni Uyghurche téxstqa ötküzidiken. Modelni yuklap, proyekttiki skriptlar bilen bir öyge saqlang.
+Bu proyekt ONNX modelini ishlitip, awazni Uyghurche tekstqa aylitidu. Modelni yükläp, loyiha skriptlari bilen bir öyde saqlang.
 
 ### Talaplar:
 
 - Python 3.9+
 - pip
-- Internet bolushi kérek (modelni yuklash üchün)
+- Internet (modelni yüklash üchün)
 
 ### O'rnatish:
 
-Repozni klon qiling yaki yuklang, andin kerék paketlarni ornatiliw:
+Repozni klon qiling yaki yuklang, andin kerakli paketlarni o'rnating:
 
 ```bash
 pip install numpy librosa pydub onnx onnxruntime
 ```
 
-### Modelni yuklash:
+### Modelni yüklash:
 
-Töwendiki model faylini yuklang ve proyekttiki bashqa skriptlar bilen bir öyge saqlang:
+Töwendiki model faylini yükläp, loyiha papkisi ichide saqlang:
 
 - [uyghur_asr.onnx](https://github.com/gheyret/uyghurasr_python/releases/download/tunji/uyghur_asr.onnx)
 
-Modelning ismi aniq shunda bolushi kérek:
+Modelning ismi aniq shu bolup turush kérek:
 
 ```text
 uyghur_asr.onnx
 ```
 
-Bu fayl quyidagilar bilen bir öyge turush kérek:
+Bu fayl quyidagilar bilen bir öyde turush kérek:
 
 - `uyghurasr.py`
 - `uyghurasrgui.py`
 - `test5.wav`
 
-### Buyruq satiri bilen ishlitish:
+### Buyruq satiri bilen ishlash:
 
-Proyekt papkisi ichide quyidagicha ishlitishingiz mumkin:
+Loyiha papkisi ichide quyidagicha ishletsingiz bolidu:
 
 ```bash
 python uyghurasr.py test5.wav
 ```
 
-Agar öz awaz höjjitiningizni ishlitishni xahlasangiz, `test5.wav` ornigha öz fayliningizni qoyush mumkin:
+Agar öz awaz faylingizni ishlitishni xahishingiz bolsa, `test5.wav` ornigha öz faylingizni qoyishingiz mumkin:
 
 ```bash
 python uyghurasr.py path/to/your_audio.wav
@@ -54,10 +54,10 @@ python uyghurasr.py path/to/your_audio.wav
 
 Skript quyidagilarni qilidu:
 
-1. Awaz höjjitini yükleydu
-2. Awazni qayta ishlash (preprocess) qilidu
-3. ONNX model bilen tanush qilishni yürütidu
-4. Tanulghan téxstni ekranga chiqaridu
+1. Awaz faylini yüklitidu
+2. Awazni qayta ishlitidu (preprocess)
+3. ONNX model bilen xulosa chiqaridu
+4. Tanulghan tekstni ekranda chiqaridu
 
 ### Misal:
 
@@ -65,7 +65,7 @@ Skript quyidagilarni qilidu:
 python uyghurasr.py test5.wav
 ```
 
-Bu namuna awaz höjjiti bilen ishlitilidu, repo ichide bérilgen `test5.wav` fayli.
+Bu repo ichide bérilgen namuna awaz fayli bilen ishlitilidu.
 
 ### GUI nüsxisi:
 
@@ -77,27 +77,27 @@ python uyghurasrgui.py
 
 Andin:
 
-1. Fayl tallash tugmasini bassaq
-2. Awaz höjjitini tallaymiz
-3. Tanush tugmasini bassaq
-4. Netijeni tekislik ichide körüp bolamiz
+1. Fayl tanlash tugmasini bosing
+2. Awaz faylini tanlang
+3. Tanush tugmasini bosing
+4. Natijeni matn maydani ichide köring
 
-### Eslentiler:
+### Eslitishler:
 
-- Model fayli `uyghur_asr.onnx` dep atalsun
+- Model fayli `uyghur_asr.onnx` deb atalsun
 - Skript to'g'ri awaz fayli yolini talap qilidu
-- Awaz formati asasen WAV yaki `pydub` oqiy alidighan format bolushi kérek
-- Eng yaxshi netije üchün tozashqiliq awazdan foydalaning
+- Awaz formati, asasen, WAV yaki `pydub` oqiy alidighan format bolushi kérek
+- Yaxshi natije üchün toza awazdan, arqa tavush az bolghan sadashtan foydalaning
 
-### Muamni çözish:
+### Xatoliklarni düzütish:
 
-Agar import xatosi chiqsa, qaysi paket yoq bolsa ornatiliw:
+Agar import xatosi chiqsa, qaysi paket yoq bolsa o'rnating:
 
 ```bash
 pip install <package_name>
 ```
 
-Misal:
+Misallar:
 
 ```bash
 pip install numpy
@@ -105,9 +105,9 @@ pip install librosa
 pip install onnxruntime
 ```
 
-Agar model topulmas bolsa, modelni yuklap ve Python fayllari bilen bir öyge saqlang.
+Agar model topulmas bolsa, uni yükläp, Python fayllari bilen bir öyde saqlang.
 
-Agar awaz höjjiti oqulmas bolsa, faylning barliqi hem awaz formati to'g'ri bolushini tekshürüng.
+Agar awaz fayli oqulmas bolsa, faylning barliqini yaki awaz formatining to'g'riligini tekshürüng.
 
 ---
 
@@ -121,7 +121,7 @@ This project uses an ONNX model to recognize Uyghur speech and convert it into t
 
 - Python 3.9+
 - pip
-- Internet connection to download the model
+- Internet access to download the model
 
 ### Installation:
 
@@ -157,7 +157,7 @@ From the project folder, run:
 python uyghurasr.py test5.wav
 ```
 
-To use your own audio file, replace `test5.wav` with your file path:
+To use your own audio file, replace `test5.wav` with your own file path:
 
 ```bash
 python uyghurasr.py path/to/your_audio.wav
@@ -202,7 +202,7 @@ Then:
 
 ### Troubleshooting:
 
-If you encounter an import error, install the missing dependencies:
+If you encounter an import error, install the missing package:
 
 ```bash
 pip install <package_name>
@@ -220,7 +220,7 @@ If the model is not found, download it and save it in the same folder as the Pyt
 
 If the audio file cannot be read, verify that the file exists and is a valid audio file.
 
-## Project structure / Proyekt qurulushi
+## Proyekt qurulishi
 
 ```text
 uyghurasr_python/
@@ -228,12 +228,12 @@ uyghurasr_python/
 ├── test5.wav
 ├── uyghurasr.py
 ├── uyghurasrgui.py
-├── uyghur_asr.onnx   # downloaded model
+├── uyghur_asr.onnx   # yüklän model
 └── ...
 ```
 
-## License / Litsenziya
+## Litsenziya
 
-This project is provided as-is for research, experimentation, and educational purposes.
+Bu loyiha tadqiqot, sinash ve bilim öyrinish maqsidida berilgen.
 
-Bu proyekt tadqiqot, sinash ve bilim öyrenish maqsidida bérilgen.
+This project is provided as-is for research, experimentation, and educational use.
