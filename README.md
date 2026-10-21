@@ -244,8 +244,4 @@ uyghurasr_python/
 └── ...
 ```
 
-## Litsenziya
-
-Bu loyiha tadqiqot, sinash va bilim öyrinish maqsidida berilgen.
-
 This project is provided as-is for research, experimentation, and educational use.
